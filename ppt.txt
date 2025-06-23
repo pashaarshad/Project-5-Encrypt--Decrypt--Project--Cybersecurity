@@ -1,0 +1,72 @@
+CAPSTONE PROJECT
+
+PROJECT TITLE: HIDING A TEXT INSIDE AN IMG USING STEGANOGRAPHY
+
+Presented By:
+1. Arshad - [Your College Name] - [Your Department]
+
+OUTLINE
+- Problem Statement (Should not include solution)
+- System Development Approach (Technology Used)
+- Algorithm & Deployment (Step by Step Procedure)
+- Result
+- Conclusion
+- Future Scope (Optional)
+- References
+
+PROBLEM STATEMENT
+The project aims to enhance secure communication by hiding secret messages within images using steganography. Traditional encryption can draw attention, while steganography conceals the existence of the message. The goal is to create a user-friendly web app for encrypting and decrypting messages. The solution should be accessible and robust. This project demonstrates practical cybersecurity applications.
+
+SYSTEM APPROACH
+The system is developed as a web application using Python and Flask for the backend, and HTML, CSS, and JavaScript for the frontend. The approach focuses on modularity, security, and ease of use. The backend handles image processing and steganography, while the frontend provides an intuitive interface for users. The application is deployed on Render, a cloud platform, ensuring accessibility and scalability.
+
+System requirements:
+- Python 3.8+
+- Web browser (Chrome, Firefox, etc.)
+- Internet connection
+
+Libraries required to build the model:
+- Flask
+- Pillow
+- numpy
+- opencv-python
+- matplotlib
+- gunicorn (for deployment)
+
+ALGORITHM & DEPLOYMENT
+Step-by-step procedure:
+1. User uploads a cover image and enters a secret message and key.
+2. The backend encrypts the message and hides it in the image using LSB (Least Significant Bit) steganography.
+3. The processed image (stegano object) is returned for download.
+4. For decryption, the user uploads the stegano image and enters the key.
+5. The backend extracts and decrypts the hidden message.
+6. The result is displayed to the user.
+7. The app is deployed on Render using Gunicorn as the WSGI server.
+
+RESULT
+- The web app allows users to securely hide and retrieve messages in images.
+- User interface is clean and easy to use.
+- The system successfully encrypts and decrypts messages as demonstrated in the following screenshots:
+  [Insert screenshots of the web app interface, encryption, decryption, and output here]
+- GitHub link: https://github.com/pashaarshad/Project-5-Encrypt--Decrypt--Project--Cybersecurity
+
+CONCLUSION
+The Secure Steganography Web App provides an effective solution for secure communication by combining steganography and encryption. The project demonstrates the feasibility of hiding sensitive information in images and retrieving it securely. Challenges included handling various image formats and ensuring cross-platform compatibility. Future improvements could include support for more file types and advanced encryption algorithms.
+
+FUTURE SCOPE (OPTIONAL)
+- Add support for audio and video steganography.
+- Implement user authentication and logging.
+- Integrate advanced cryptographic techniques.
+- Develop a mobile app version.
+
+REFERENCES
+- https://flask.palletsprojects.com/
+- https://pillow.readthedocs.io/
+- https://numpy.org/
+- https://opencv.org/
+- https://matplotlib.org/
+- Research papers and articles on steganography and cybersecurity.
+
+THANK YOU
+
+[Insert relevant images/screenshots in the PPT where indicated.]
