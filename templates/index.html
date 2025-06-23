@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Steganography Web App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel left-panel">
+            <h2>Encrypt Your Message</h2>
+            <form id="encrypt-form">
+                <label for="cover-image">Import Image</label>
+                <input type="file" id="cover-image" accept="image/*" required>
+                <div class="img-preview-box">
+                    <img id="cover-preview" class="img-preview" src="" alt="Preview" style="display:none;" />
+                </div>
+                <label for="secret-message">Enter Secret Message</label>
+                <input type="text" id="secret-message" required>
+                <label for="secret-key">Enter Secret Key</label>
+                <input type="password" id="secret-key" required>
+                <button type="submit" id="encrypt-btn">Encrypt & Download</button>
+                <div id="encrypt-status" class="status"></div>
+            </form>
+        </div>
+        <div class="panel right-panel">
+            <h2>Decrypt from Stegno Object</h2>
+            <form id="decrypt-form">
+                <label for="stegno-image">Import Stegno Object</label>
+                <input type="file" id="stegno-image" accept="image/*" required>
+                <div class="img-preview-box">
+                    <img id="stegno-preview" class="img-preview" src="" alt="Preview" style="display:none;" />
+                </div>
+                <label for="decrypt-key">Enter Decryption Key</label>
+                <input type="password" id="decrypt-key" required>
+                <button type="submit" id="decrypt-btn">Decrypt</button>
+                <div id="decrypt-status" class="status"></div>
+            </form>
+            <div id="decrypted-message" class="output-message"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
